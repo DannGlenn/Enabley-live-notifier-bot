@@ -1,0 +1,11 @@
+from selenium import webdriver
+
+PASSWORD = 'enter your password here'
+USERNAME = 'enter your email here'
+REFRESH_EVERY = 10 #seconds
+STATIC = './src/static'
+
+driver = webdriver.Chrome()
+driver.implicitly_wait(0.5)
+#launch URL
+driver.get("https://apps.prod.timetoknow.com/index.html?site=johnbryce#/$/library/channel/b5884185-7448-4fdf-a7e5-75bb2a340c86/Python%20FS%20-%207731%2F12?levelIds=YzI1MDgzNDktODgxYy00NWI4LTgwNDQtZWUzYjFiNzE4ZGM5LGE3ZGNlODQ3LTZhN2YtNjY1Mi1kMzZmLWE2YWQ5MjU2YTU0ZixlOTlkOTkzZi0xZTgwLTQ2ZDYtYjM2Yy03YWY4ZDY2NTBmZjQsMjcwZjE2OTEtYjgwZi00MTg1LThhNTQtN2I5Yzk3NDNjNmJkLDg3ZTk2YjdkLTE1NzUtNDkyZi04NTU1LWZkZmJkNjIyODljZCxiODI1YWI1Yy00MDNiLTRjNWYtODU0Yy0xYzIxNzEyYWNlM2IsY2RhOTY2OTEtNGRhMC00NWJmLTliMGYtYTM5OGFiZThmZmQxLDBhNzdhMmE1LTc2OGMtNDFjYi1hMDZlLTFlMzlhMTVjMjI1OSw2MjA1MDc1Yi1mNzM2LTQ0ZjktYmJjZS1iODg4NWYxM2NjZTUsMjY0ZWFlMjEtNjllYy00MjgzLTk0YWQtOWJhNDNjYTM0ZGVmLDI3MjkxZjA5LTYyYjctNDllZC1iMDFkLWEzZTc2NTAxMTAzYyxiMDMwOTdmZS1mZjQwLTQ2MDctOGY1OC04NGRiMDUzNWI3ZmY=")

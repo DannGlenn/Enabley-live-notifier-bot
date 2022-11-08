@@ -9,7 +9,7 @@ login(USERNAME, PASSWORD)
 #loop until session is live
 loop_until_live(REFRESH_EVERY)
 #alert and enter session
-playsound(f'{STATIC}/live.mp3')
 driver.find_element(By.ID, "live-session-button-element").click()
+playsound(f'{STATIC}/live.mp3')
 #exit
 sys.exit("Good luck in class today")
